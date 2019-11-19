@@ -1,17 +1,41 @@
-#MON4 {
-    color: red;
+#MON4, #MON3 {
+ 
     background-color:blue;
+ 
 }
+
 
 #SAT3 {
     color: pink;
     background-color:orange;
+   
 }
 
 #container {
     width:400px;
-    border:green 1px solid;
+    /* border:gray 1px solid; */
+    
 }
-tr, td{
-    border: green 1px solid;
+
+table {
+    border-collapse: collapse;
+}
+
+tr> .time {
+    background-color: rgb(187, 179, 179);
+    width: 1px;
+    border-bottom: 1px rgb(226, 225, 225) solid;
+    
+
+}
+
+tr, td, th{
+    height: 30px;
+    width: 60px;
+    border-right: rgb(226, 225, 225) 1px solid;
+   
+}
+
+.days {
+    border-bottom:rgb(226, 225, 225) 1px solid;
 }
