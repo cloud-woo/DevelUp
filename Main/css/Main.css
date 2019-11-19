@@ -1,0 +1,17 @@
+#MON4 {
+    color: red;
+    background-color:blue;
+}
+
+#SAT3 {
+    color: pink;
+    background-color:orange;
+}
+
+#container {
+    width:400px;
+    border:green 1px solid;
+}
+tr, td{
+    border: green 1px solid;
+}
