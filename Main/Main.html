@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>My TimeTable</title>
+        <link rel="stylesheet" type="text/css" href="Main.css">
     </head>
     <body>
     <table>
 
         <script>
 
-        var days = new Array( '시간','MON', 'THU', 'WED','TUR','FRI','SAT' );
+        var days = new Array( '시간','MON', 'TUE', 'WED','THU','FRI','SAT' );
         document.write("<tr>");
         for(var i=0;i<days.length;i++){
             document.write("<th>");
@@ -21,17 +22,25 @@
         
         var row = 13; // 행 
         var colunm = 7;  // 열 
+
         for(var i=0;i<row;i++){ 
             document.write("<tr>");
             for(var j=0;j<colunm;j++){ 
-                document.write("<td>"); 
-                document.write("[ "+i+", "+j+" ]");
+                document.write("<td id=\""+days[j]+i+"\">");   //주의
+                document.write(days[j]+i)
+                // document.write("[ "+i+", "+j+" ]");
+                
                 document.write("</td>");
+            
             }
             document.write("</tr>");
         }
         
         </script>
+
+        <h1 id="name">
+dd
+        </h1>
 
     </table>
     </body>
