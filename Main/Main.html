@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My TimeTable</title>
+    </head>
+    <body>
+    <table>
+
+        <script>
+
+        var days = new Array( '시간','MON', 'THU', 'WED','TUR','FRI','SAT' );
+        document.write("<tr>");
+        for(var i=0;i<days.length;i++){
+            document.write("<th>");
+            document.write(days[i]);
+            document.write("</th>");
+        }
+        document.write("</tr>");
+    
+
+        
+        var row = 13; // 행 
+        var colunm = 7;  // 열 
+        for(var i=0;i<row;i++){ 
+            document.write("<tr>");
+            for(var j=0;j<colunm;j++){ 
+                document.write("<td>"); 
+                document.write("[ "+i+", "+j+" ]");
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        
+        </script>
+
+    </table>
+    </body>
+
+</html>
